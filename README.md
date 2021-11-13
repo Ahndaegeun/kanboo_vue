@@ -80,6 +80,8 @@
   * common
     - global
     - member
+    - menu
+    - style
 
   * NoAccess
     - home
