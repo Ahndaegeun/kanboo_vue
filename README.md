@@ -1,6 +1,6 @@
-- Container * Component
+- Container(* Component)
   & Global(App)
-    = NoAccess
+    - NoAccess
       - Home
         * VideoView
         * HowToUse
@@ -12,7 +12,7 @@
       - Community
         * Free
         * QnA
-    = Access
+    - Access
       - Projects
         * UserInfo
         * ProjectList
