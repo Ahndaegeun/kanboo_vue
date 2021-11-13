@@ -1,24 +1,110 @@
-# kanboo
+- Container * Component
+  & Global(App)
+    = NoAccess
+      - Home
+        * VideoView
+        * HowToUse
+      - Demo
+        * Java
+        * HTML
+      - Sign
+        * Terminal
+      - Community
+        * Free
+        * QnA
+    = Access
+      - Projects
+        * UserInfo
+        * ProjectList
+        * Changes
+      - ProjectDetail
+        - DashBoard
+          * Gantt
+          * Member
+          * Commit
+          * Progress
+          * Issue
+          * FinishDay
+          * Board
+          * Schedule
+          * SearchChart
+        - Scheduler
+          * MonthCalendar
+          * Filter
+          * WeekCalendar
+        - Compiler
+          * SideBar
+          - Java
+            * Editor
+            * Result
+          - HTML
+            * EditAndResult
+        - ProjectBoard
+          * Insert
+          * List
+        - GanttChart
+          * Chart
+          * Detail
+          * Write
+        - Git & Issue
+          * Git
+          * Issue
+        -* Requirements
+        - ERD & View
+          * SideBar
+          - ERD
+            * Table
+            * Write
+          - View
+            * View
+            * Tools
+        - Kanban
+          * Article
+        - Setting
+          * Name
+          * Date
+          * Member
+          * AddMember
+          * Buttons
+      - Admin
+        * UserProject
+        * UserList
+        * QnA
 
-## Project setup
-```
-npm install
-```
+- popup
+  - CreateProject
+  - Chat
+  - Notice
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+- store
+  * common
+    - global
+    - member
 
-### Compiles and minifies for production
-```
-npm run build
-```
+  * NoAccess
+    - home
+    - demo
+    - sign
+    - community
+    - QnA
 
-### Lints and fixes files
-```
-npm run lint
-```
+  * main
+    - projectList
+    - dashBoard
+    - scheduler
+    - htmlCompile
+    - javaCompile
+    - board
+    - gantt
+    - git
+    - issue
+    - requirements
+    - erd
+    - view
+    - kanban
+    - setting
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+  * Admin
+    - UserProject
+    - UserList
+    - QnA
