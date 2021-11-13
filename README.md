@@ -1,5 +1,5 @@
 - Container(* Component)
-  & Global(App)
+  - Global(App)
     - NoAccess
       - Home
         * VideoView
